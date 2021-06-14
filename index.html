@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Módulo 3 iv2</title>
+  
+</head>
+
+<body>
+  <div id="titulo">
+    <h1>Formulário Matemático</h1>
+  </div>
+
+  <form>
+    <section>
+        <p>
+          1° RETORNO DE UM NUMERO FRACIONADO EM  INTEIRO MAIS PROXIMO
+        </p>
+
+        <div>
+            <label for="fracionado">Número:
+              <input class="cx" type="number" id="fracionado" placeholder="Ex: 41.55" name="numFracionado">
+            <input class="bt" type="button" value="Calcular" onclick="mostrarParteInteira()">
+          </label>
+        </div>
+    </section>
+
+    <section>
+        <p>
+          2° POTENCIAÇÃO DE UM NUMERO POR OUTRO NUMERO
+        </p>
+
+        <div>
+            <label for="base">Número 1:
+               <input class="cx" id="base" type="number"placeholder="Número da base" name="numBase">
+               </label>
+            
+            <label for="expoente">Número 2: 
+              <input class="cx" id="expoente" type="number" placeholder="Número do expoente" name="numExpoente"> 
+            <input class="bt" type="button" value="Calcular" onclick="calcularPotencia()">
+          </label>
+
+        </div>
+    </section>
+
+    <section>
+        <p>
+          3° CALCULO DA MEDIDA DE UM CIRCULO
+        </p>
+        <ul>
+            <li>Medida da Circunferência de um Circulo (C = 2 * π * raio)</li>
+            <li>Resultado do Cálculo da Área (A = π * r²)</li>
+        </ul>
+
+        <div>
+            <label for="raioCircunf"> Raio: 
+              <input class="cx" id="raioCircunf" type="number" name="numRaioCircunferencia" placeholder="Informe o valor do raio">
+          </label>
+        </div>
+        <div>
+            <label for="areaCircunf"> Raio: 
+              <input class="cx" id="raioCircunferencia" type="number" name="numRaioCircunf" placeholder="Informe o valor do raio">
+            <input class="bt" type="button" value="Calcular" onclick="areaCircunferencia()">
+          </label>
+        </div>
+
+    </section>
+
+    <section>
+        <p> 
+          4° CALCULO DA MEDIDA DE UM CUBO
+        </p>
+          <ul>
+              <li>Área da Base (Ab = a²)</li>
+              <li>Área total (At = Ab * 6)</li>
+              <li>Volume do Cubo (Vt = a³)</li>
+           </ul>
+        <div>
+            <label for="arestaCubo"> Aresta: 
+              <input class="cx" id="arestaCubo" type="number" name="numArestaCubo" placeholder="Informe o valor da aresta">
+            <input class="bt" type="button" value="Calcular" onclick="areaBaseCubo()">
+          </label>
+        </div>
+    </section>
+
+    <section>
+        <p> 
+          5° RAIZ QUADRADA
+        </p>
+        <div>
+            <label for="raizQd"> Número: 
+              <input class="cx" type="number" id="raizQd" name="num_raiz_quadrada" placeholder="Só números positivos">
+            <input class="bt" type="button" value="Calcular" onclick="raizQuadrada()">
+          </label>
+        </div>
+    </section>
+</form>
+
+  <footer>
+    <div>
+      <span>
+        Feito por Igor Vieira de Oliviera
+      </span>
+        <a href="https://github.com/Kinnitchi" target="_blank"> (Kinnitchi)</a>
+    </div>
+    
+  </footer>
+
+  <script src="apps.js"></script>
+
+</body>
+
+</html>
